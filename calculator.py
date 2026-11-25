@@ -1,5 +1,5 @@
 def calculate(expression):
-    return eval(expression)
+    return eval(expression.replace("+", "-"))
 
 def show_menu():
     print("\n========== Main Menu ==========")
