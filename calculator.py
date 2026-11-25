@@ -1,3 +1,6 @@
+def calculate(expression):
+    return eval(expression)
+
 def show_menu():
     print("\n========== Main Menu ==========")
     print("  1. Perform an operation")
@@ -17,7 +20,7 @@ def perform_calc():
     expression = input("  Enter expression using above operators : ")
 
     try:
-        result = eval(expression)
+        result = calculate(expression)
         fresult = f"{expression} = {result}"
         print(f"\n  Result : {fresult}")
 
